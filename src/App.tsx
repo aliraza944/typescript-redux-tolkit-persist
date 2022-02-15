@@ -20,7 +20,12 @@ function App() {
       <h1 className="text-3xl font-bold">
         Redux typescript toolkit and redux persist boilerplate
       </h1>
-      <p className="text-2xl text-blue-900 font-bold">{state}</p>
+      <p
+        data-testid="displayCount"
+        className="text-2xl text-blue-900 font-bold"
+      >
+        {state}
+      </p>
       <div>
         <p className="mt-4 mb-4 capitalize text-xl">{apiStatus}</p>
       </div>
