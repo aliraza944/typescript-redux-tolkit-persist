@@ -57,7 +57,7 @@ function App() {
       <div>
         <button
           className="border-2 bg-slate-500 p-5 w-40 rounded"
-          onClick={() => dispatch(fetchUserById(state))}
+          onClick={() => dispatch(fetchUserById(1))}
         >
           Api call
         </button>

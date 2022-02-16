@@ -13,6 +13,7 @@ export const fetchUserById = createAsyncThunk(
     );
     // Inferred return type: Promise<MyData>
     const res = await response.json();
+
     return res.userId as MyData["userId"];
   }
 );
