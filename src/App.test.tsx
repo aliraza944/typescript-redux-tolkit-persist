@@ -83,3 +83,13 @@ it("Should simulate the api call", async () => {
   await waitFor(() => expect(counter).toHaveTextContent("1"));
   // expect(counter).toHaveTextContent("1");
 });
+it("Should simulate the exchange rate", async () => {
+  render(<MockApp />);
+
+  const exchangeButton = screen.getByText("Get Exchange Rate");
+
+  const exchange = screen.getByTestId("exchange");
+
+  fireEvent.click(exchangeButton);
+  expect(exchange).toHaveTextContent("800");
+});
